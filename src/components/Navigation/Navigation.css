@@ -1,0 +1,21 @@
+.main-nav {
+  background-color: grey;
+}
+
+.main-nav .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav .wrap .nav-menu {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav .wrap .nav-menu a {
+  text-decoration: none;
+  color: white;
+}

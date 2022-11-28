@@ -1,0 +1,19 @@
+img {
+  max-height: 200px;
+}
+
+.country-page {
+  display: flex;
+  justify-content: center;
+}
+
+.country-card {
+  text-align: center;
+  background-color: rgb(241, 240, 240);
+  padding: 10px 40px 20px;
+}
+
+.image-wrap {
+  display: flex;
+  gap: 15px;
+}
