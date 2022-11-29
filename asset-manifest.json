@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/cities-page/static/css/main.54c7abdd.css",
+    "main.js": "/cities-page/static/js/main.ef1a70e9.js",
+    "static/js/787.2072712c.chunk.js": "/cities-page/static/js/787.2072712c.chunk.js",
+    "static/media/Continents.jpg": "/cities-page/static/media/Continents.4391cf1230f98f1db8ed.jpg",
+    "index.html": "/cities-page/index.html",
+    "static/media/LeftArrow.svg": "/cities-page/static/media/LeftArrow.b74b51c4c35fb292f28d63a42b7d73c9.svg",
+    "static/media/RightArrow.svg": "/cities-page/static/media/RightArrow.b282d2fca8839e80178c1a178ce23993.svg",
+    "main.54c7abdd.css.map": "/cities-page/static/css/main.54c7abdd.css.map",
+    "main.ef1a70e9.js.map": "/cities-page/static/js/main.ef1a70e9.js.map",
+    "787.2072712c.chunk.js.map": "/cities-page/static/js/787.2072712c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54c7abdd.css",
+    "static/js/main.ef1a70e9.js"
+  ]
+}
