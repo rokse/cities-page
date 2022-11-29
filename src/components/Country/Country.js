@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import './Countries.css'
+import { Link, useParams } from 'react-router-dom';
+import './Countries.css';
+import axios from 'axios';
 
 const Country = () => {
   let params = useParams();
@@ -9,11 +10,13 @@ const Country = () => {
   const [paramsId, setParamsId] = useState(params.countryName)
 
   useEffect(() => {
-    fetch(`https://restcountries.com/v3.1/name/${paramsId}?fullText=true`)
-      .then(res => res.json())
-      .then(countriesObj => {
-        setCountries(countriesObj);
-      });
+    axios.get(`https://restcountries.com/v3.1/name/${paramsId}?fullText=true`)
+    .then((response) => {
+      setCountries(response.data)
+    })
+    .catch(error => {
+      alert(error + ' , please try again later');
+    })
   }, [paramsId]);
 
   const renderCountry = () => {

@@ -1,0 +1,29 @@
+.Countries-flag-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+a:hover {
+  box-shadow: 9px -9px 10px -6px rgb(0 0 0 / 22%);
+}
+
+
+.all-flag-wrap {
+  text-align: center;
+  background-color: rgb(241, 240, 240);
+  padding: 10px 40px 20px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+
+

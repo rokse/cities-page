@@ -1,10 +1,4 @@
 import React from 'react';
-import { ReactComponent as EuropeSvg } from '../images/Europe.svg';
-import { ReactComponent as AfricaSvg } from '../images/Africa.svg';
-import { ReactComponent as AsiaSvg } from '../images/Asia.svg';
-import { ReactComponent as AustraliaSvg } from '../images/Australia.svg';
-import { ReactComponent as NorthAmericaSvg } from '../images/NorthAmerica.svg';
-import { ReactComponent as SouthAmericaSvg } from '../images/SouthAmerica.svg';
 import { Link } from 'react-router-dom';
 import './Continents.css';
 
