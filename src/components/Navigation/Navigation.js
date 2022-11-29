@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navigation.css';
 
 const Navigation = () => {
   const [searchInput, setSearchInput] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-
-
+    navigate('./search/' + searchInput);
+    setSearchInput('');
   };
   
   return (
@@ -19,7 +19,7 @@ const Navigation = () => {
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/continents'>Continents</Link></li>
         </ul>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} >
           <input type='text' name='search' id='search' value={searchInput} onChange={event => setSearchInput(event.target.value)} />
           <input type='submit' value='Search' />
         </form>

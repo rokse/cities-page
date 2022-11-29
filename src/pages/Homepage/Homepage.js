@@ -1,17 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Homepage.css';
+import axios from 'axios';
 
 const Homepage = () => {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-    fetch('https://restcountries.com/v3.1/all')
-    .then(res => res.json())
-    .then(countries => {
-      setCountries(countries);
-    });
+    axios.get(`https://restcountries.com/v3.1/all`)
+    .then((response) => {
+      setCountries(response.data)
+    })
+    .catch(error => {
+      alert(error + ' , please try again later');
+    })
   }, []);
+
 
   const renderCountries = () => {
     return countries.map((country, index) => {
@@ -31,7 +35,7 @@ const Homepage = () => {
 
   return (
     <>
-    <div className='wrap'>
+    <div className='wrap all-flag-wrap'>
       <h1>Select flag to view country:</h1>
       <ul className='Countries-flag-list'>
         {renderCountries()}

@@ -18,4 +18,9 @@
 .main-nav .wrap .nav-menu a {
   text-decoration: none;
   color: white;
+  box-shadow: unset;
+}
+
+.main-nav .wrap .nav-menu a:hover {
+  font-weight: bold;
 }

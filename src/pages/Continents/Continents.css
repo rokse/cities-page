@@ -1,15 +1,9 @@
-svg {
-  height: 200px;
-}
-
 .continent-bg {
   height: 691px;
-  background-image: url(../images/Continents.jpg);
-}
-
-a {
-  text-decoration: none;
-  color: black;
+  padding: 20px 30px;
+  background-image: url(../../images/Continents.jpg);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .world-map {
