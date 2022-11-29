@@ -18,6 +18,7 @@ img {
 .image-wrap {
   display: flex;
   gap: 15px;
+  justify-content: center;
 }
 
 .arrow {
