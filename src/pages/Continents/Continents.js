@@ -2,39 +2,39 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Continents.css';
 
-const Continents = () => {
+const Continents = ({ data: { europe, asia, africa, australia, northAmerica, southAmerica } }) => {
   return (
     <div className='wrap continent-bg'>
       <h1>Continents:</h1>
       <div className='world-map'>
         <Link to='/continents/countries/north%20america'>
           <div className='north-america continent'>
-            North America
+            {northAmerica}
           </div>
         </Link>
         <Link to='/continents/countries/europe'>
           <div className='europe continent'>
-            Europe
+            {europe}
           </div>
         </Link>
         <Link to='/continents/countries/asia'>
           <div className='asia continent'>
-            Asia
+            {asia}
           </div>
         </Link>
         <Link to='/continents/countries/south%20america'>
           <div className='south-america continent'>
-            South America
+            {southAmerica}
           </div>
         </Link>
         <Link to='/continents/countries/africa'>
           <div className='africa continent'>
-            Africa
+            {africa}
           </div>
         </Link>
         <Link to='/continents/countries/australia'>
           <div className='australia continent'>
-            Australia
+            {australia}
           </div>
         </Link>
       </div>
