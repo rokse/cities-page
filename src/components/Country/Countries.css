@@ -19,3 +19,14 @@ img {
   display: flex;
   gap: 15px;
 }
+
+.arrow {
+  margin: auto 20px;
+  transition: fill 0.2s ease-in-out;
+}
+
+.arrow:hover {
+  fill: white;
+  cursor: pointer;
+}
+

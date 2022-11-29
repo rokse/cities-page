@@ -12,13 +12,15 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <Routes className='site-wrap'>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/continents' element={<Continents />} />
-        <Route path='/search/:searchInput' element={<SearchPage />} />
-        <Route path='/continents/countries/:regionName' element={<CountryListByContinent />} />
-        <Route path='/countries/:countryName' element={<Country />} />
-      </Routes>
+      <div className='container'>
+        <Routes className='site-wrap'>
+          <Route path='/' element={<Homepage />} />
+          <Route path='/continents' element={<Continents />} />
+          <Route path='/search/:searchInput' element={<SearchPage />} />
+          <Route path='/continents/countries/:regionName' element={<CountryListByContinent />} />
+          <Route path='/countries/:countryName' element={<Country />} />
+        </Routes>
+      </div>
     </div>
   );
 }
